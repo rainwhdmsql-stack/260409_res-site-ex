@@ -1,0 +1,20 @@
+/* 768px */
+@media (max-width: 768px) {
+  .gnb {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .product-list li {
+    width: calc((100% - 40px) / 3);
+  }
+  .visual .pc-img{
+    display: none;
+  }
+  .visual .tablet-img {
+    display: block;
+  }
+}
