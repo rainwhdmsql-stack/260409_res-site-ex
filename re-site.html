@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>반응형 예제 1</title>
     <link rel="stylesheet" href="css/re-site.css" />
-    <link rel="stylesheet" href="css/re-site_responsive.css">
+    <link rel="stylesheet" href="css/re-site_responsive.css" />
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -27,11 +27,13 @@
       </header>
       <!-- 비주얼 -->
       <section class="visual">
-        <!-- pc 비주얼 -->
-        <img src="images/visual.png" class="pc-img" alt="비주얼" />
-        <!-- 태블릿 비주얼 -->
-         <img src="images/fish&chips.png" class="tablet-img" alt="비주얼">
-        <div class="inner">
+        <div class="visual-img">
+          <img src="images/visual.png" alt="pc" class="pc-visal" />
+          <img src="images/fish&chips.png" alt="tablet" class="tablet-visal" />
+        </div>
+        <!-- visual txt -->
+        <!-- 인너 -->
+        <div class="visual-inner inner">
           <div class="visual-txt">
             <h2>WELCOME</h2>
             <p>햄버거 메뉴 연습🍔🍕</p>
@@ -76,6 +78,20 @@
           </div>
         </div>
       </footer>
+      <!-- js 코드 -->
+      <script>
+        // 햄버거바 클릭
+        const menu_btn = document.querySelector(".menu-btn");
+        const gnb = document.querySelector(".gnb");
+        menu_btn.addEventListener("click", () => {
+        //   if (gnb.style.display === "block") {
+        //     gnb.style.display = "none";
+        //   } else {
+        //     gnb.style.display = "block";
+        //   }
+        gnb.classList.toggle("on");
+        });
+      </script>
     </div>
   </body>
 </html>
